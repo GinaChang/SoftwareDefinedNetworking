@@ -1,0 +1,323 @@
+{
+  "flows": [
+    {
+      "id": "39125023818444543",
+      "tableId": "0",
+      "appId": "org.onosproject.cpr",
+      "groupId": 0,
+      "priority": 40002,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4827,
+      "packets": 3586,
+      "bytes": 150612,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [{ "type": "OUTPUT", "port": "CONTROLLER" }],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 1 },
+          { "type": "ETH_TYPE", "ethType": "0x806" },
+          { "type": "VLAN_VID", "vlanId": -1 }
+        ]
+      }
+    },
+    {
+      "id": "39125026054514590",
+      "tableId": "0",
+      "appId": "org.onosproject.cpr",
+      "groupId": 0,
+      "priority": 40001,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "PENDING_ADD",
+      "life": 0,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641270175480,
+      "treatment": {
+        "instructions": [
+          { "type": "L2MODIFICATION", "subtype": "VLAN_POP" },
+          { "type": "OUTPUT", "port": "2" }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 1 },
+          { "type": "ETH_DST", "mac": "F2:54:AD:17:33:69" },
+          { "type": "ETH_TYPE", "ethType": "0x800" },
+          { "type": "VLAN_VID", "vlanId": -1 },
+          { "type": "IPV4_DST", "ip": "10.0.1.3/32" }
+        ]
+      }
+    },
+    {
+      "id": "23080948974565180",
+      "tableId": "0",
+      "appId": "org.onosproject.fibinstaller",
+      "groupId": 0,
+      "priority": 100,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4827,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [
+          {
+            "type": "L2MODIFICATION",
+            "subtype": "VLAN_PUSH",
+            "ethernetType": "vlan"
+          },
+          { "type": "L2MODIFICATION", "subtype": "VLAN_ID", "vlanId": 4094 }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 1 },
+          { "type": "ETH_DST", "mac": "F2:54:AD:17:33:69" },
+          { "type": "VLAN_VID", "vlanId": -1 }
+        ]
+      }
+    },
+    {
+      "id": "281475174024470",
+      "tableId": "0",
+      "appId": "org.onosproject.core",
+      "groupId": 0,
+      "priority": 40000,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4955,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [{ "type": "OUTPUT", "port": "CONTROLLER" }],
+        "clearDeferred": true,
+        "deferred": []
+      },
+      "selector": { "criteria": [{ "type": "ETH_TYPE", "ethType": "0x88cc" }] }
+    },
+    {
+      "id": "23080951719354215",
+      "tableId": "0",
+      "appId": "org.onosproject.fibinstaller",
+      "groupId": 0,
+      "priority": 100,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4827,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [
+          {
+            "type": "L2MODIFICATION",
+            "subtype": "VLAN_PUSH",
+            "ethernetType": "vlan"
+          },
+          { "type": "L2MODIFICATION", "subtype": "VLAN_ID", "vlanId": 4094 }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 2 },
+          { "type": "ETH_DST", "mac": "F2:54:AD:17:33:69" },
+          { "type": "VLAN_VID", "vlanId": -1 }
+        ]
+      }
+    },
+    {
+      "id": "39125022581023008",
+      "tableId": "0",
+      "appId": "org.onosproject.cpr",
+      "groupId": 0,
+      "priority": 40001,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "PENDING_ADD",
+      "life": 0,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641270175488,
+      "treatment": {
+        "instructions": [
+          { "type": "L2MODIFICATION", "subtype": "VLAN_POP" },
+          { "type": "OUTPUT", "port": "1" }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 2 },
+          { "type": "ETH_SRC", "mac": "F2:54:AD:17:33:69" },
+          { "type": "ETH_TYPE", "ethType": "0x800" },
+          { "type": "VLAN_VID", "vlanId": -1 },
+          { "type": "IPV4_SRC", "ip": "10.0.1.3/32" }
+        ]
+      }
+    },
+    {
+      "id": "281478198913778",
+      "tableId": "0",
+      "appId": "org.onosproject.core",
+      "groupId": 0,
+      "priority": 40000,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4955,
+      "packets": 136,
+      "bytes": 5712,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [{ "type": "OUTPUT", "port": "CONTROLLER" }],
+        "clearDeferred": true,
+        "deferred": []
+      },
+      "selector": { "criteria": [{ "type": "ETH_TYPE", "ethType": "0x806" }] }
+    },
+    {
+      "id": "23080950255241577",
+      "tableId": "0",
+      "appId": "org.onosproject.fibinstaller",
+      "groupId": 0,
+      "priority": 100,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4827,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [
+          {
+            "type": "L2MODIFICATION",
+            "subtype": "VLAN_PUSH",
+            "ethernetType": "vlan"
+          },
+          { "type": "L2MODIFICATION", "subtype": "VLAN_ID", "vlanId": 4094 }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 1 },
+          { "type": "ETH_DST_MASKED" },
+          { "type": "VLAN_VID", "vlanId": -1 }
+        ]
+      }
+    },
+    {
+      "id": "281476316108114",
+      "tableId": "0",
+      "appId": "org.onosproject.core",
+      "groupId": 0,
+      "priority": 40000,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4955,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [{ "type": "OUTPUT", "port": "CONTROLLER" }],
+        "clearDeferred": true,
+        "deferred": []
+      },
+      "selector": { "criteria": [{ "type": "ETH_TYPE", "ethType": "0x8942" }] }
+    },
+    {
+      "id": "39125024989192621",
+      "tableId": "0",
+      "appId": "org.onosproject.cpr",
+      "groupId": 0,
+      "priority": 40001,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "PENDING_ADD",
+      "life": 0,
+      "packets": 0,
+      "bytes": 0,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641270175497,
+      "treatment": {
+        "instructions": [
+          { "type": "L2MODIFICATION", "subtype": "VLAN_POP" },
+          { "type": "OUTPUT", "port": "2" }
+        ],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 1 },
+          { "type": "ETH_TYPE", "ethType": "0x800" },
+          { "type": "VLAN_VID", "vlanId": -1 },
+          { "type": "IP_PROTO", "protocol": 89 }
+        ]
+      }
+    },
+    {
+      "id": "39125023190276292",
+      "tableId": "0",
+      "appId": "org.onosproject.cpr",
+      "groupId": 0,
+      "priority": 40002,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:00000000000000a1",
+      "state": "ADDED",
+      "life": 4827,
+      "packets": 3586,
+      "bytes": 150612,
+      "liveType": "UNKNOWN",
+      "lastSeen": 1641275002908,
+      "treatment": {
+        "instructions": [{ "type": "OUTPUT", "port": "CONTROLLER" }],
+        "deferred": []
+      },
+      "selector": {
+        "criteria": [
+          { "type": "IN_PORT", "port": 2 },
+          { "type": "ETH_SRC", "mac": "F2:54:AD:17:33:69" },
+          { "type": "ETH_TYPE", "ethType": "0x806" },
+          { "type": "VLAN_VID", "vlanId": -1 },
+          { "type": "ARP_SPA" }
+        ]
+      }
+    }
+  ]
+}

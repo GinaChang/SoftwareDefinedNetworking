@@ -1,0 +1,29 @@
+{
+  "devices": {
+    "of:00000000000000a1": {
+      "basic": {
+        "driver": "softrouter"
+      }
+    }
+  },
+  "ports": {
+    "of:00000000000000a1/1": {
+      "interfaces": [
+        {
+          "name": "router",
+          "ips": ["10.0.1.3/24"],
+          "mac": "00:00:00:00:00:01"
+        }
+      ]
+    }
+  },
+  "apps": {
+    "org.onosproject.router": {
+      "router": {
+        "controlPlaneConnectPoint": "of:00000000000000a1/2",
+        "ospfEnabled": "true",
+        "interfaces": ["router"]
+      }
+    }
+  }
+}
